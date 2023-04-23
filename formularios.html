@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bixo {
+            cursor: pointer;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: large;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <!-- a "tag" forme serve para criar formularios-->
+        <section>
+            <h1>Bixosidade</h1>
+            <p>formulario</p>
+            <p>
+                <label class="bixo" for="nome" >nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="nome de bixo" value="">
+                <!-- tag "input" serve para criar entradas de digitaçao-->
+                <!-- o atributo "placeholder" serve para deixar um exemplo na caixa de texto-->
+                <!-- o atributo "type" serve para declarar o tipo do input usado-->
+                <!-- o atributo "name" serve para indentificar pro back end oq foi digitado-->
+                <!-- o atribuyo "value" é oq a pessoa digitar na caixa de texto-->
+            </p>
+            
+            <p>
+                <button type="submit">enviar</button>
+                <button type="reset">resetar</button>
+                <!-- a tag "button" serve para criar um botao na tela-->
+                <!-- o atributo "type submit" serve para enviar -->
+                <!-- o atribuyo "type reset" serve para resetar para caixa de texto original-->
+            </p>
+            <p>
+                <br>
+                <label for="teste" >voce é ricao?:</label>
+                <input type="checkbox" id="teste" name="teste" value=""><br>
+                <!--a tag "label" serve para descrever o input-->
+                <!-- o atributo "checkbox" cria uma caixa com marcaçao sim/nao-->
+            </p>
+            <p>
+                voce é meu amigao?<br>
+                <label for="teste" >sim:</label>
+                <input type="radio" id="teste" name="amigao" value=""><br>
+                <label for="teste" >nao:</label>
+                <input type="radio" id="teste" name="amigao" value=""><br>
+                <label for="teste" >talvez:</label>
+                <input type="radio" id="teste" name="amigao" value=""><br>
+                <!-- o atributo "radio" serve para criar um conjunto de caixas q nao podem ser marcada mais de uma opçao-->
+            </p>
+            <p>
+                
+                <label class="bixo" for="date_time" >data e hora:</label>
+                <input type="datetime-local" id="date_time" name="date_time" value="">
+                <!-- atributo "datetime-local" serve para colocar a data e a hora-->
+            </p>
+            <p>
+                <label class="bixo" for="cor" >cor favorita:</label>
+                <input type="color" id="cor" name="cor" value="">
+                <!-- o atributo "color" serve para selecionar uma cor-->
+            </p>
+            <p>
+                <label class="bixo" for="email" >seu email:</label>
+                <input type="email" id="email" name="email" placeholder="digite seu email" value="">
+                <!-- o atributo "email" serve para pedir q digite um email-->
+            </p>
+            <p>
+                <label class="bixo" for="file" >foto da parada:</label>
+                <input type="file" id="file" name="file" accept="" multiple >
+                <!-- o atributo "file" serve para pedir qualquer tipo de arquivo-->
+                <!-- o atributo "accept" serve para especificar o tipo de arquivo recebido-->
+                <!-- o atributo "multiple" serve para permitir o envio de mais de um aquivo ao mesmo tempo-->
+            </p>
+            <p>
+                <label class="bixo" for="number" >numero:</label>
+                <input type="number" id="file" name="number" placeholder="digite um numero" >
+                <!-- o atributo "number" serve para pedir um numero-->
+            </p>
+            <p>
+                <label class="bixo" for="password" >digita a senha:</label>
+                <input type="password" id="password" name="password" placeholder="digite sua senha">
+                <!-- o atributo "password" serve para digitar caracteres invisiveis-->
+            </p>
+            <p>
+                <label class="bixo" for="range" >range:</label>
+                <input type="range" id="range" name="range" >
+            </p>
+            <p>
+                <label class="bixo" for="url" >sua url:</label>
+                <input type="url" id="url" name="url" placeholder=" sua url" >
+            </p>
+            <p>
+                <label class="bixo" for="select" >qual o maior xerequeiro do grupo?:</label>
+                <select name="select" id="select" multiple>
+                    <option value="piruca">piruca</option>
+                    <option value="douguinha">douguinha</option>
+                    <option value="bixo">bixo</option>
+                    <option value="elias">elias</option>
+                </select><br><br><br><br><br><br><br>
+                <p>a</p>
+            </p>
+                
+        </section>
+
+    </form>
+</body>
+</html>
