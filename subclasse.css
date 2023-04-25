@@ -1,0 +1,56 @@
+.amigao,.test{
+    transition: all 1s ease-in-out;
+    /* a propriedade "transition" é usada para criar uma transiçao entre os estilos aplicados
+    escolher o tempo e o formato da transiçao*/
+}
+.amigao:hover{
+    background-color: green;
+    /* a sub classe "hover" serve para criar um estilo apos passar o cursor do mouse em cima*/
+}
+.test:hover{
+    color: pink;   
+}
+a{
+    color: green;
+    text-decoration: none;
+    /* a propriedade "text-decoration" serve para decorar um texto colocando uma linha embaixo e etc*/
+}
+a:link{
+    color: orange;
+    /* a subclasse "link" serve para estilizar links ja visitados*/
+}
+a:visited{
+    color: purple;
+    /* a pseudoclasse " visited" serve para estilizar links ja visitados*/
+}
+a:active{
+    color: darkgray;
+    /* a subclasse "active" serve para estilizar links que esteja sendo clicado no momento*/
+}
+label{
+    display: block;
+}
+input:focus{
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    border: 1px solid black;
+    cursor: not-allowed;
+    /*
+    pseudo classe " focus" serve para estilizar todo box q tem foco
+    a propriedade " outline" serve pra estilzar a liha de baixo
+    a propriedade "box-shadow" serve para colocar uma sombra nas bordas
+    a propriedade "cursor" serve para alterar o cursos
+    */
+}
+#douguinha:checked + p{
+    background-color: red;
+    /* a pseudo classe "checked" serve para estlizar as caixas checadas
+    o seletor "+" serve para estilizar a proxima caixa*/
+
+}
+
+#douguinha:not(:checked) + p{
+    background-color: green;
+    /*
+    a pseudoclasse "not" serve para estilizar todas menos essa*/
+}
